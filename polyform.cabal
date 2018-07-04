@@ -51,7 +51,7 @@ cabal-version:       >=1.10
 
 library
   -- Modules exported by the library.
-  exposed-modules: Polyform
+  exposed-modules: Polyform.Reporter, Polyform.Validator
 
   -- Modules included in this library but not exported.
   -- other-modules:
@@ -60,7 +60,9 @@ library
   -- other-extensions:
 
   -- Other library packages from which modules are imported.
-  build-depends:       base >=4.10 && <4.11
+  build-depends:
+    base >=4.10 && <4.11,
+    validation >=1 && < 2.0
 
   -- Directories containing source files.
   hs-source-dirs:      src

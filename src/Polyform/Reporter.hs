@@ -1,5 +1,5 @@
 {-# LANGUAGE DeriveFunctor #-}
-module Polyform where
+module Polyform.Reporter where
 
 import Data.Monoid ((<>))
 import Control.Category
